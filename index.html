@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    
+        <div class="content-container">
+
+        <div class="date-container">
+
+            <div class="current-wrapper">
+                <h2>Today's Date:</h2>
+                <input type="date" id="current" class="date-input" value="2023-03-29">
+            </div>
+    
+            
+            <div class="dob-wrapper">
+                <h2>Your Birthday:</h2>
+                <input type="date" id="dob" class="date-input">
+            </div>
+
+        </div>
+
+            <div class="button-wrapper">
+                <button id="calc" class="calc" onclick="calculate()">Calculate</button>
+                <p class="warning" id="warning">Please Enter a Date Of Birth.</p>
+            </div>
+
+        
+            
+            <div class="result-container" id="result-container">
+                <div class="result-title-wrapper">
+                    <h2>Today You Are...</h2>
+                </div>
+    
+                <br>
+
+                <div class="circles-container">
+                    <div class="container year">
+                        <input type="text" readonly id="resultYear" class="result year" value="18">
+                        <h4 id="years-label">Years</h4>
+                    </div>
+    
+                    <div class="container month">
+                        <input type="text" readonly id="resultMonth" class="result month" value="9">
+                        <h4 id="months-label">Months</h4>
+                    </div>
+    
+                    <div class="container day">
+                        <input type="text" readonly  id="resultDay" class="result day" value="23">
+                        <h4 id="days-label">Days</h4>
+                    </div>
+
+                </div>
+
+                <div class="old-wrapper">
+                    <h2>Old!</h2>
+                </div>
+
+            </div>
+            
+        </div>  
+
+
+        <canvas class="confetti" id="canvas"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="script.js"></script>
+    
+</body>
+
+
+</html>
